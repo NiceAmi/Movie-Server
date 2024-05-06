@@ -1,0 +1,23 @@
+Server Setup:
+
+The server runs on http://localhost:5000.
+MongoDB is used as the database, containing a movies database with users and movies collections.
+User Authentication:
+
+Users can register and login to the system.
+Upon login, users receive a token valid for three hours, allowing them to perform actions.
+Passwords are encrypted for security.
+User CRUD Operations:
+
+Users can perform CRUD operations on their own profiles.
+Movie Operations:
+
+Users can upload, view, update, and delete movies.
+Full CRUD operations are available for managing movies.
+Session Management:
+
+A counter tracks each user's actions, limited to ten per day.
+Actions are logged to a JSON file, organized by date, with details including user ID, action type, action count, and timestamp.
+Project Execution:
+
+The project is started with node ./main.js, not npm start, to ensure the counter functionality works correctly.
